@@ -2,11 +2,10 @@
 import sys
 import numpy as np
 
-# set decimal number
-num = -207
+# set decimal number, (!!!TRY YOUR NUMBER HERE!!!!)
+num = 207
 print(f"input decimal number: {num}")
 
-# y = a sin(2pift)
 # convert decimal to binary
 n_binary = bin(num)
 # convert decimal to octal
@@ -35,7 +34,7 @@ if num < 0:
 # https://numpy.org/doc/stable/reference/generated/numpy.base_repr.html#numpy.base_repr
 
 # Solution:
-#'''
+'''
 # convert decimal to binary
 n_binary = np.binary_repr(num, 16)
 # convert decimal to octal
@@ -46,4 +45,4 @@ n_hex = np.base_repr(num, base=16)
 print(f"binary: {n_binary}")
 print(f"octal: {n_octal}")
 print(f"hex: {n_hex}")
-#'''
+'''

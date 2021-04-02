@@ -52,7 +52,7 @@ print(f"pos {h},{v} orig:{orig_pix}, reconstructed:{recon_pix}")
 # https://numpy.org/doc/stable/user/basics.indexing.html
 
 # Solution:
-#'''
+'''
 img_size = img_gray.shape
 # for forward 2d DCT on 8x8 block
 dct_8x8 = np.zeros(img_size)
@@ -79,4 +79,4 @@ plt.subplot(133)
 plt.imshow(im_reconstructed)
 plt.title('reconstructed image (DCT+IDCT)')
 plt.show()
-#'''
+'''

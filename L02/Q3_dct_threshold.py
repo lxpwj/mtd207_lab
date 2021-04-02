@@ -43,7 +43,7 @@ for i in np.r_[:img_size[0]:8]:
         dct_8x8_reconstructed[i:(i+8), j:(j+8)
                               ] = idct(dct_8x8[i:(i+8), j:(j+8)])
 
-# Threshold
+# Threshold (TRY YOUR THRESHOLD!!!!)
 thresh = 0.01
 # discard those coefficients below threshold
 dct_thresh = dct_8x8 * (abs(dct_8x8) > (thresh*np.max(dct_8x8)))

@@ -4,7 +4,7 @@ import numpy as np
 import os
 
 # set image file to ../data/00.bmp
-# you are free to point to any other image files
+# you are free to point to any other image files (!!!TRY YOUR IMAGES HERE!!!!)
 IMG_FILE = os.path.join("..", "data", "00.bmp")
 
 # read image file, img is BGR
@@ -26,12 +26,12 @@ plt.show()
 # https://numpy.org/doc/stable/user/basics.indexing.html
 
 # Solution:
-#'''
+'''
 h = 0
 v = 0
 R, G, B = img_rgb[v, h, :]
 print(f"R:{R}, G:{G}, B:{B}")
-#'''
+'''
 
 
 # Question 2:
@@ -41,7 +41,7 @@ print(f"R:{R}, G:{G}, B:{B}")
 # https://docs.opencv.org/4.4.0/d3/df2/tutorial_py_basic_ops.html
 
 # Solution:
-#'''
+'''
 # specify location, where are modified
 h_start, h_end = 100, 150
 v_start, v_end = 100, 150
@@ -57,4 +57,4 @@ plt.subplot(1, 2, 2)
 plt.imshow(img_rgb_changed)
 plt.title("modified image")
 plt.show()
-#'''
+'''

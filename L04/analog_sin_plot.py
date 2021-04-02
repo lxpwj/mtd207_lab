@@ -12,9 +12,10 @@ t = linspace(0, length, num=N, endpoint=False)
 
 # Generate a sinusoid at frequency f
 f = 10  # Hz
-f2 = 30  # Hz
-#a = 5*sin(2 * pi * f * t)
-a = 2* sin(2 * pi * f * t) + 2/3*sin(2 * pi * f2 * t)
+a = 5*sin(2 * pi * f * t)
+# generate a composite waveform which has 2 different frequencies
+#f2 = 30  # Hz
+#a = 2* sin(2 * pi * f * t) + 2/3*sin(2 * pi * f2 * t)
 
 # Plot signal, showing how endpoints wrap from one chunk to the next
 plt.subplot(2, 1, 1)
@@ -44,4 +45,4 @@ plt.show()
 #
 
 # Solution:
-# uncomment Line 17, change f and f2 to get different results
+# uncomment Line 17&18, change f and f2 to get different results

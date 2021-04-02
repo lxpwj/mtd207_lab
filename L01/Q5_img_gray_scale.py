@@ -4,7 +4,7 @@ import numpy as np
 import os
 
 # set image file to ../data/00.bmp
-# you are free to point to any other image files
+# you are free to point to any other image files (!!!TRY YOUR IMAGES HERE!!!!)
 IMG_FILE = os.path.join("..", "data", "city001.png")
 
 # read image file, img is BGR
@@ -49,21 +49,21 @@ plt.show()
 # compare to question in Q3_4_img_read.py to see difference between color image and gray scale image
 
 # Solution:
-#'''
+'''
 h = 0
 v = 0
 gray_val = img_gray[v, h]
 print(f"Gray value:{gray_val}")
-#'''
+'''
 
 
 # Question 2:
 # think about how to separate R Channel, G channel and B channel data?
-# https://docs.opencv.org/4.4.0/d3/df2/tutorial_py_basic_ops.html
+# https://docs.opencv.org/4.5.1/d3/df2/tutorial_py_basic_ops.html
 # split image into channels
 
 # Solution:
-#'''
+'''
 n_b, n_g, n_r = cv2.split(img_bgr)
 print(f"split image into R/G/B, size (width, height): {n_b.shape}")
 #plot image for comparision
@@ -80,4 +80,4 @@ plt.subplot(1, 4, 4)
 plt.imshow(n_r, cmap='Reds_r')
 plt.title("Red channel image")
 plt.show()
-#'''
+'''
